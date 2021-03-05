@@ -17,6 +17,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+  spec.metadata      = {
+    "allowed_push_host" => "https://rubygems.pkg.github.com/daangn"
+  }
 
   # Only fix this one version or else tests break
   spec.add_dependency "redis", "~> 4.0"
